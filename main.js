@@ -1,4 +1,5 @@
 var AmpersandState = require('ampersand-state');
+var mymodule = require('./mymodule.js');
 
 var personProps = {
     firstName: "string",
