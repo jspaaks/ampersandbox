@@ -1,8 +1,11 @@
 var mymodule = require('./mymodule.js');
 var Person = require('./Person.js');
+var Car = require('./Car.js');
 
 var person = new Person({firstName: "John", lastName: "Smith"});
 var anotherPerson = new Person({firstName: "Faruk", lastName: "Diblen"});
+
+var car = new Car({make: "Alfa Romeo", model: "147", year: 2006, powerKiloWatts: 88})
 
 console.log(person.fullName);
 console.log(anotherPerson.fullName);
@@ -18,3 +21,6 @@ person.on('change:isDancing', function () {
 
 // set the value and the callback will fire
 person.isDancing = true;
+
+
+console.log(car.powerHP);
