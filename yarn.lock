@@ -21,6 +21,37 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+ampersand-class-extend@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ampersand-class-extend/-/ampersand-class-extend-2.0.0.tgz#52895ffa59217634a6188fd184b1048f5d808aff"
+  dependencies:
+    lodash "^4.11.1"
+
+ampersand-collection-view@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/ampersand-collection-view/-/ampersand-collection-view-2.0.2.tgz#8990bf81b5a35f3ab87eecffafc61bb2fabe356b"
+  dependencies:
+    ampersand-class-extend "^2.0.0"
+    ampersand-events "^2.0.1"
+    ampersand-version "^1.0.0"
+    lodash "^4.11.1"
+
+ampersand-dom-bindings@^3.9.1:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/ampersand-dom-bindings/-/ampersand-dom-bindings-3.9.2.tgz#f8a7aff50c7934f0c972ddfe29c16df97e3e108e"
+  dependencies:
+    ampersand-dom "^1.2.5"
+    ampersand-version "^1.0.0"
+    key-tree-store "^1.2.0"
+    lodash "^4.17.4"
+    matches-selector "^1.0.0"
+
+ampersand-dom@^1.2.5:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/ampersand-dom/-/ampersand-dom-1.5.0.tgz#78e36f8b38aa5700f1a129d3423560a6c0523808"
+  dependencies:
+    ampersand-version "^1.0.0"
+
 ampersand-events@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/ampersand-events/-/ampersand-events-2.0.2.tgz#f402bc2e18305fabd995dbdcd3b7057bbdd7d347"
@@ -28,7 +59,7 @@ ampersand-events@^2.0.1:
     ampersand-version "^1.0.2"
     lodash "^4.6.1"
 
-ampersand-state@^5.0.3:
+ampersand-state@^5.0.2, ampersand-state@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/ampersand-state/-/ampersand-state-5.0.3.tgz#33402ea604375af64a249f664a0312c1160da475"
   dependencies:
@@ -44,6 +75,20 @@ ampersand-version@^1.0.0, ampersand-version@^1.0.2:
   dependencies:
     find-root "^0.1.1"
     through2 "^0.6.3"
+
+ampersand-view@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/ampersand-view/-/ampersand-view-10.0.2.tgz#6240b47fbc2854f716e99977e3619656ce675307"
+  dependencies:
+    ampersand-collection-view "^2.0.2"
+    ampersand-dom-bindings "^3.9.1"
+    ampersand-state "^5.0.2"
+    ampersand-version "^1.0.2"
+    component-classes "^1.2.6"
+    domify "^1.4.0"
+    events-mixin "^1.3.0"
+    lodash "^4.17.4"
+    matches-selector "^1.2.0"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -344,6 +389,12 @@ cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
 
+closest@*:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/closest/-/closest-0.0.1.tgz#26da6f80b3e0e17e71f80f12782819e9f653495c"
+  dependencies:
+    matches-selector "0.0.1"
+
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
@@ -366,6 +417,20 @@ combine-source-map@~0.7.1:
     inline-source-map "~0.6.0"
     lodash.memoize "~3.0.3"
     source-map "~0.5.3"
+
+component-classes@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/component-classes/-/component-classes-1.2.6.tgz#c642394c3618a4d8b0b8919efccbbd930e5cd691"
+  dependencies:
+    component-indexof "0.0.3"
+
+component-event@*, component-event@^0.1.3:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/component-event/-/component-event-0.1.4.tgz#3de78fc28782381787e24bf2a7c536bf0142c9b4"
+
+component-indexof@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/component-indexof/-/component-indexof-0.0.3.tgz#11d091312239eb8f32c8f25ae9cb002ffe8d3c24"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -517,6 +582,13 @@ del@^3.0.0:
     pify "^3.0.0"
     rimraf "^2.2.8"
 
+delegate-events@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/delegate-events/-/delegate-events-1.1.1.tgz#dab490a9c1f1d40ca40ebcd21edaf717b671d4d4"
+  dependencies:
+    closest "*"
+    component-event "*"
+
 deps-sort@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/deps-sort/-/deps-sort-2.0.0.tgz#091724902e84658260eb910748cccd1af6e21fb5"
@@ -551,6 +623,10 @@ diffie-hellman@^5.0.0:
 domain-browser@~1.1.0:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
+
+domify@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/domify/-/domify-1.4.0.tgz#11483617f764f8695975b4bdc79b14f0803b629b"
 
 dot-prop@^4.1.0:
   version "4.2.0"
@@ -634,6 +710,13 @@ estraverse@~1.5.0:
 esutils@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-1.0.0.tgz#8151d358e20c8acc7fb745e7472c0025fe496570"
+
+events-mixin@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/events-mixin/-/events-mixin-1.3.0.tgz#552167de80a8c350a1f200eb73d2017ae797ecdd"
+  dependencies:
+    component-event "^0.1.3"
+    delegate-events "^1.1.0"
 
 events@~1.1.0:
   version "1.1.1"
@@ -958,7 +1041,7 @@ jsonparse@^1.2.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
 
-key-tree-store@^1.3.0:
+key-tree-store@^1.2.0, key-tree-store@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/key-tree-store/-/key-tree-store-1.3.0.tgz#5ea29afc2529a425938437d6955b714ce6a9791f"
 
@@ -996,7 +1079,7 @@ lodash.memoize@~3.0.3:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-3.0.4.tgz#2dcbd2c287cbc0a55cc42328bd0c736150d53e3f"
 
-lodash@^4.12.0, lodash@^4.6.1:
+lodash@^4.11.1, lodash@^4.12.0, lodash@^4.17.4, lodash@^4.6.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -1027,6 +1110,14 @@ make-dir@^1.0.0:
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
+
+matches-selector@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/matches-selector/-/matches-selector-0.0.1.tgz#1df5262243ae341c1a0804dd302048267ac713bb"
+
+matches-selector@^1.0.0, matches-selector@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/matches-selector/-/matches-selector-1.2.0.tgz#d1814e7e8f43e69d22ac33c9af727dc884ecf12a"
 
 md5.js@^1.3.4:
   version "1.3.4"
