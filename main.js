@@ -1,12 +1,5 @@
-var AmpersandState = require('ampersand-state');
 var mymodule = require('./mymodule.js');
-
-var personProps = {
-    firstName: "string",
-    lastName: "string"
-};
-
-var Person = AmpersandState.extend({props: personProps});
+var Person = require('./Person.js');
 
 console.log('hello world');
 
