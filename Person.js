@@ -2,12 +2,24 @@ module.exports = (function () {
 
     var AmpersandState = require('ampersand-state');
 
-    var personProps = {
+    var props = {
         firstName: "string",
         lastName: "string"
     };
 
-    var Person = AmpersandState.extend({props: personProps});
+    var derived = {
+        fullName: {
+            deps: ["firstName", "lastName"],
+            fn: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+    };
+
+    var Person = AmpersandState.extend({
+        props, 
+        derived
+    });
 
     return Person;
 

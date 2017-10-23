@@ -1,10 +1,10 @@
 var mymodule = require('./mymodule.js');
 var Person = require('./Person.js');
 
-console.log('hello world');
+var person = new Person({firstName: "John", lastName: "Smith"});
+var anotherPerson = new Person({firstName: "Faruk", lastName: "Diblen"});
 
-var person1 = new Person();
-var person2 = new Person({firstName: "John"});
-var person3 = new Person({firstName: "John", lastName: "Smith"});
+console.log(person.fullName);
+console.log(anotherPerson.fullName);
 
-console.log(person3.lastName);
+
