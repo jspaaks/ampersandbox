@@ -1,9 +1,10 @@
 {
   "scripts": {
     "build": "del dist && mkdir dist && npm run browserify",
-    "browserify": "browserify src/main.js --outfile dist/bundle.js --debug"
+    "browserify": "browserify src/main.js --transform brfs --outfile dist/bundle.js --debug"
   },
   "devDependencies": {
+    "brfs": "^1.4.3",
     "browserify": "^14.5.0",
     "del-cli": "^1.1.0",
     "mkdirp": "^0.5.1"
