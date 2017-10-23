@@ -4,7 +4,8 @@ module.exports = (function () {
 
     var props = {
         firstName: "string",
-        lastName: "string"
+        lastName: "string",
+        isDancing: "boolean"
     };
 
     var derived = {
