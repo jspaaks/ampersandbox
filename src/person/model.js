@@ -17,11 +17,11 @@ module.exports = (function () {
         }
     };
 
-    var Person = AmpersandState.extend({
+    var PersonModel = AmpersandState.extend({
         props, 
         derived
     });
 
-    return Person;
+    return PersonModel;
 
 })();

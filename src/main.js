@@ -1,9 +1,9 @@
 var mymodule = require('./mymodule.js');
-var Person = require('./Person.js');
+var {PersonModel, PersonView} = require('./person');
 var Car = require('./Car.js');
 
-var person = new Person({firstName: "John", lastName: "Smith"});
-var anotherPerson = new Person({firstName: "Faruk", lastName: "Diblen"});
+var person = new PersonModel({firstName: "John", lastName: "Smith"});
+var anotherPerson = new PersonModel({firstName: "Faruk", lastName: "Diblen"});
 
 var car = new Car({make: "Alfa Romeo", model: "147", year: 2006, powerKiloWatts: 88})
 

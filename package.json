@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "del dist && mkdir dist && npm run browserify",
-    "browserify": "browserify --outfile dist/bundle.js --debug main.js"
+    "browserify": "browserify src/main.js --outfile dist/bundle.js --debug"
   },
   "devDependencies": {
     "browserify": "^14.5.0",
