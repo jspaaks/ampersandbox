@@ -2,13 +2,15 @@
   "scripts": {
     "build": "del dist && mkdir dist && npm run browserify",
     "browserify": "browserify src/main.js --transform brfs --outfile dist/app.bundle.js --debug",
-    "jsdoc": "del docs/api/$npm_package_version/ && mkdir -p docs/api/$npm_package_version/ && jsdoc --destination docs/api/$npm_package_version/ --verbose --recurse src/"
+    "jsdoc": "del docs/api/$npm_package_version/ && mkdir -p docs/api/$npm_package_version/ && jsdoc --destination docs/api/$npm_package_version/ --verbose --recurse src/",
+    "jshint": "jshint --config .jshintrc src/"
   },
   "devDependencies": {
     "browserify": "^14.5.0",
     "del-cli": "^1.1.0",
     "domready": "^1.0.8",
     "jsdoc": "^3.5.5",
+    "jshint": "^2.9.5",
     "mkdirp": "^0.5.1"
   },
   "dependencies": {
