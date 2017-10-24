@@ -3,9 +3,9 @@ module.exports = (function () {
     var AmpersandState = require('ampersand-state');
 
     var props = {
-        firstName: "string",
-        lastName: "string",
-        isDancing: "boolean"
+        firstName: {type: "string", required: true, default: undefined},
+        lastName: {type: "string", required: true, default: undefined},
+        isDancing: {type: "boolean", required: false, default: false}
     };
 
     var derived = {
