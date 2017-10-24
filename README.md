@@ -13,5 +13,5 @@ build tasks, run with ``npm`` or ``yarn``, e.g. ``yarn run build``.
 
 other
 
-- [api docs](https://jspaaks.github.io/ampersandbox/api/)
+- [api docs](https://jspaaks.github.io/ampersandbox/api/0.0.0)
 - [minimal app](https://jspaaks.github.io/ampersandbox/app/)
