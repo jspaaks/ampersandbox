@@ -6,6 +6,7 @@
   "devDependencies": {
     "browserify": "^14.5.0",
     "del-cli": "^1.1.0",
+    "domready": "^1.0.8",
     "mkdirp": "^0.5.1"
   },
   "dependencies": {

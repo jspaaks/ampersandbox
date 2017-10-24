@@ -5,7 +5,7 @@ module.exports = (function () {
     var template = require('fs').readFileSync(__dirname + '/template.html', 'utf8');
 
     var bindings = {
-        'model.firstName': '.beepboop'
+        'model.firstName': {type: 'innerHTML', selector: '#root'}
     };
 
     var PersonView = AmpersandView.extend({template, bindings});
