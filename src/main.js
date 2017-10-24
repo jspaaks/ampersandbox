@@ -10,6 +10,6 @@ domready(function () {
         model: personmodel
     });
 
-    window.setTimeout(function(){personmodel.firstName = "Faruk"}, 3000);
+    window.setTimeout(function(){personmodel.firstName = "Faruk";}, 3000);
 
 });
