@@ -1,3 +1,8 @@
+/**
+ * PersonView contains the view associated with a PersonModel as well as the
+ * bindings between the two.
+ * @module person/PersonView
+ */
 module.exports = (function () {
 
     var AmpersandView = require('ampersand-view');

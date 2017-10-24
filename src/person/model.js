@@ -1,3 +1,7 @@
+/**
+ * PersonModel contains the data describing a person
+ * @module person/PersonModel
+ */
 module.exports = (function () {
 
     var AmpersandState = require('ampersand-state');
