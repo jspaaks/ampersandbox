@@ -3,7 +3,7 @@
     "_browserify": "browserify src/app.js --transform brfs --outfile docs/app/app.bundle.js --debug",
     "jsdoc": "del docs/api/$npm_package_version/ && mkdir -p docs/api/$npm_package_version/ && jsdoc --destination docs/api/$npm_package_version/ --verbose --recurse src/",
     "jshint": "jshint --config .jshintrc src/",
-    "build": "del docs/app && mkdir -p docs/app && cp -r static/index.html docs/app/index.html && npm run _browserify"
+    "build": "del docs/app && mkdir -p docs/app && cp -r static/* docs/app/ && npm run _browserify"
   },
   "devDependencies": {
     "browserify": "^14.5.0",

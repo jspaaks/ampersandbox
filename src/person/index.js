@@ -5,11 +5,8 @@
  * @see module:person/PersonModel
  * @see module:person/PersonView
  */
-module.exports = (function () {
 
-    var PersonModel = require('./model');
-    var PersonView = require('./view');
+let PersonModel = require("./model");
+let PersonView = require("./view");
 
-    return {PersonModel, PersonView};
-
-})();
+module.exports = {PersonModel, PersonView};

@@ -1,14 +1,22 @@
 module.exports = (function () {
 
-    var AmpersandView = require('ampersand-view');
+    "use strict";
 
-    var template = require('fs').readFileSync(__dirname + '/template.html', 'utf8');
+    let AmpersandView = require("ampersand-view");
 
-    var bindings = {
-    };
 
-    var MainView = AmpersandView.extend({template, bindings});
+    let RootView = AmpersandView.extend({
+        template: require("fs").readFileSync(__dirname + "/template.html", "utf8"),
+        render: function () {
+            this.renderWithTemplate();
+            let {PersonView, PersonModel} = require("../person");
+            let personmodel = new PersonModel({firstName: "John", lastName: "Smith"});
+            let personview = new PersonView(personmodel);
+            this.renderSubview(personview, ".personname");
+            return this;
+        }
+    });
 
-    return MainView;
+    return RootView;
 
 })();

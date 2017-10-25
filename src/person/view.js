@@ -5,15 +5,17 @@
  */
 module.exports = (function () {
 
-    var AmpersandView = require('ampersand-view');
+    "use strict";
 
-    var template = require('fs').readFileSync(__dirname + '/template.html', 'utf8');
+    let AmpersandView = require("ampersand-view");
 
-    var bindings = {
-        'model.firstName': {type: 'innerHTML', selector: '#root'}
+    let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
+
+    let bindings = {
+        "model.firstName": {type: "innerHTML", selector: ".person"}
     };
 
-    var PersonView = AmpersandView.extend({template, bindings});
+    let PersonView = AmpersandView.extend({template, bindings});
 
     return PersonView;
 

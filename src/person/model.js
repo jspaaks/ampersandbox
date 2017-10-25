@@ -4,15 +4,17 @@
  */
 module.exports = (function () {
 
-    var AmpersandState = require('ampersand-state');
+    "use strict";
 
-    var props = {
+    let AmpersandState = require("ampersand-state");
+
+    let props = {
         firstName: {type: "string", required: true, default: undefined},
         lastName: {type: "string", required: true, default: undefined},
         isDancing: {type: "boolean", required: false, default: false}
     };
 
-    var derived = {
+    let derived = {
         fullName: {
             deps: ["firstName", "lastName"],
             fn: function () {
@@ -21,8 +23,8 @@ module.exports = (function () {
         }
     };
 
-    var PersonModel = AmpersandState.extend({
-        props, 
+    let PersonModel = AmpersandState.extend({
+        props,
         derived
     });
 

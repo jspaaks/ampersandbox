@@ -1,18 +1,19 @@
 module.exports = (function () {
 
-    var AmpersandState = require('ampersand-state');
+    "use strict";
 
-    var props = {
+    let AmpersandState = require("ampersand-state");
+
+    let props = {
+        response: {
+            type: "array",
+            required: false,
+            default: undefined
+        }
     };
 
-    var derived = {
-    };
+    let RootModel = AmpersandState.extend({props});
 
-    var MainModel = AmpersandState.extend({
-        props, 
-        derived
-    });
-
-    return MainModel;
+    return RootModel;
 
 })();

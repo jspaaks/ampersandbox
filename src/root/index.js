@@ -1,8 +1,4 @@
-module.exports = (function () {
+let RootModel = require("./model");
+let RootView = require("./view");
 
-    var MainModel = require('./model');
-    var MainView = require('./view');
-
-    return {MainModel, MainView};
-
-})();
+module.exports = {RootModel, RootView};
