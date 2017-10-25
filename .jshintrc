@@ -1,3 +1,17 @@
 {
-    "esversion": 6
+    "esversion": 6,
+    "browserify": true,
+    "browser": true,
+    "curly": true,
+    "devel": true,
+    "eqeqeq": true,
+    "forin": true,
+    "nonew": true,
+    "strict": true,
+    "undef": true,
+    "unused": true,
+    "varstmt": true,
+    "indent": 4,
+    "newcap": true,
+    "quotmark": "double"
 }
