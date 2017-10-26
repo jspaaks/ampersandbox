@@ -19,9 +19,26 @@ Run with ``npm`` or ``yarn``, e.g. ``yarn run build``.
 ## Todo
 
 - model & view a list using a collection 
+- inheritance AbstractRepository -> GitHubRepositoy and BitbucketRepository or something
 - figure out event binding
+- routing
+- write some tests, add testing framework (jest maybe? something that integrates
+  with react if we do decide to switch to that)
 - consider using webpack for bundling, since it adds require'ing of template 
   files without the current ``brfs`` workaround.
+- after this repo includes all of the patterns used by https://github.com/nlesc/SPOT:
+
+    - nested views
+    - rendering collections
+    - inheritance
+    - event binding
+    - routing
+
+  make an inventory of what needs to be done for a refactor, given that we
+
+    - keep Ampersand
+    - replace Ampersand with React.
+
 
 ## Helpful example 
 
