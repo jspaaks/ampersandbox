@@ -18,7 +18,6 @@ domready(function () {
     });
 
     rootview.render();
-    console.log(rootview);
 
 });
 

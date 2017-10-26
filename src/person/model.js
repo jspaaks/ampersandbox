@@ -9,16 +9,16 @@ module.exports = (function () {
     let AmpersandState = require("ampersand-state");
 
     let props = {
-        firstName: {type: "string", required: true, default: undefined},
-        lastName: {type: "string", required: true, default: undefined},
-        isDancing: {type: "boolean", required: false, default: false}
+        firstname: {type: "string", required: false, default: "First"},
+        lastname: {type: "string", required: false, default: "Last"},
+        isdancing: {type: "boolean", required: false, default: false}
     };
 
     let derived = {
         fullName: {
-            deps: ["firstName", "lastName"],
+            deps: ["firstname", "lastname"],
             fn: function () {
-                return this.firstName + " " + this.lastName;
+                return this.firstname + " " + this.lastname;
             }
         }
     };
