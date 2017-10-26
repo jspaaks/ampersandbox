@@ -36,6 +36,15 @@ ampersand-collection-view@^2.0.2:
     ampersand-version "^1.0.0"
     lodash "^4.11.1"
 
+ampersand-collection@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ampersand-collection/-/ampersand-collection-2.0.1.tgz#41ce5b81fc075949cab229fffddb8d9cfbb533cc"
+  dependencies:
+    ampersand-class-extend "^2.0.0"
+    ampersand-events "^2.0.1"
+    ampersand-version "^1.0.2"
+    lodash "^4.11.1"
+
 ampersand-dom-bindings@^3.9.1:
   version "3.9.2"
   resolved "https://registry.yarnpkg.com/ampersand-dom-bindings/-/ampersand-dom-bindings-3.9.2.tgz#f8a7aff50c7934f0c972ddfe29c16df97e3e108e"
