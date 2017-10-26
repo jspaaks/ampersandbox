@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: root/model.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,47 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: root/model.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * [root/model]{@link module:root/model} contains the data that the root view 
+ * watches
+ * @module root/model
+ */
+module.exports = (function () {
 
+    "use strict";
 
-    <h3> </h3>
+    let AmpersandState = require("ampersand-state");
 
+    let props = {
+        repositories: {
+            type: "array",
+            required: false,
+            default: undefined
+        },
+        person: {
+            type: "object",
+            required: false,
+            default: undefined
+        }
+    };
 
+    let RootModel = AmpersandState.extend({props});
 
+    return RootModel;
 
-
-
-
-
-
-
-    
-
-
-
-
-
+})();
+</code></pre>
+        </article>
+    </section>
 
 
 

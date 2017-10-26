@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: repository/view.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,44 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: repository/view.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * [repository/view]{@linkcode module:repository/view} contains the view
+ * associated with a [repository/model]{@linkcode module:repository/model} as
+ * well as the bindings between the two.
+ * @module repository/view
+ */
+module.exports = (function () {
 
+    "use strict";
 
-    <h3> </h3>
+    let AmpersandView = require("ampersand-view");
 
+    let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
 
+    let bindings = {
+        "model.repositories[0].id": {
+            type: "text",
+            selector: ".id"
+        }
+    };
 
+    let RepositoryView = AmpersandView.extend({template, bindings});
 
+    return RepositoryView;
 
-
-
-
-
-
-    
-
-
-
-
-
+})();
+</code></pre>
+        </article>
+    </section>
 
 
 
