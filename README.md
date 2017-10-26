@@ -2,31 +2,30 @@
 testing out ampersand
 
 
-build tasks, run with ``npm`` or ``yarn``, e.g. ``yarn run build``.
+## build tasks
+
+Run with ``npm`` or ``yarn``, e.g. ``yarn run build``.
 
 - ``build``: generates a distribution in``dist/`` directory, open dist/index.html in a browser to view.
 - ``jsdoc``: should generate the JSDoc documentation.
 - ``jshint``: run the code style checker.
 - ``gh-pages``: copies the files for the app to under ``docs/app`` so they can be hosted at GitHub pages.
 
-
-
-other
+## GitHub pages
 
 - [api docs](https://jspaaks.github.io/ampersandbox/api/0.0.0)
 - [minimal app](https://jspaaks.github.io/ampersandbox/app/)
 
-
-Todo
+## Todo
 
 - model & view a list using a collection 
-- figure out nesting
+- figure out event binding
 - consider using webpack for bundling, since it adds require'ing of template 
   files without the current ``brfs`` workaround.
 
+## Helpful example 
 
-
-Found this example https://github.com/AmpersandJS/ampersand-view/issues/61 
+Found this example here https://github.com/AmpersandJS/ampersand-view/issues/61.
 
 ```javascript
 var View = require('ampersand-view');
