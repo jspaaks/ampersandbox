@@ -1,3 +1,8 @@
+/**
+ * [root/model]{@link module:root/model} contains the data that the root view 
+ * watches
+ * @module root/model
+ */
 module.exports = (function () {
 
     "use strict";

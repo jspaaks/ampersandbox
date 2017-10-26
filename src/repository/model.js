@@ -1,3 +1,8 @@
+/**
+ * [repository/model]{@link module:repository/model} contains the data 
+ * describing a repository
+ * @module repository/model
+ */
 module.exports = (function () {
 
     "use strict";

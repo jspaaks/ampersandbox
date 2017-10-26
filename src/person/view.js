@@ -1,7 +1,8 @@
 /**
- * PersonView contains the view associated with a PersonModel as well as the
- * bindings between the two.
- * @module person/PersonView
+ * [person/view]{@linkcode module:person/view} contains the view associated with
+ * a [person/model]{@linkcode module:person/model} as well as the bindings 
+ * between the two.
+ * @module person/view
  */
 module.exports = (function () {
 

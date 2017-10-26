@@ -1,10 +1,17 @@
+/**
+ * [root/view]{@linkcode module:root/view} contains the view associated with a
+ * [root/model]{@linkcode module:root/model}. Most importantly, it defines two 
+ * subviews, [person/view]{@linkcode module:person/view} and 
+ * [repository/view]{@linkcode module:repository/view}.
+ * @module root/view
+ */
 module.exports = (function () {
 
     "use strict";
 
     let AmpersandView = require("ampersand-view");
-    let {PersonView} = require("../person");
-    let {RepositoryView} = require("../repository");
+    let PersonView = require("../person/view");
+    let RepositoryView = require("../repository/view");
 
     let subviews = {
         person: {

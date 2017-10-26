@@ -1,3 +1,9 @@
+/**
+ * [repository/view]{@linkcode module:repository/view} contains the view
+ * associated with a [repository/model]{@linkcode module:repository/model} as
+ * well as the bindings between the two.
+ * @module repository/view
+ */
 module.exports = (function () {
 
     "use strict";

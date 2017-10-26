@@ -1,6 +1,7 @@
 /**
- * PersonModel contains the data describing a person
- * @module person/PersonModel
+ * [person/model]{@link module:person/model} contains the data describing a 
+ * person
+ * @module person/model
  */
 module.exports = (function () {
 
