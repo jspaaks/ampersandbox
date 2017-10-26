@@ -5,8 +5,13 @@ module.exports = (function () {
     let AmpersandState = require("ampersand-state");
 
     let props = {
-        response: {
+        repositories: {
             type: "array",
+            required: false,
+            default: undefined
+        },
+        person: {
+            type: "object",
             required: false,
             default: undefined
         }

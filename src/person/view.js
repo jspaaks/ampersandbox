@@ -12,8 +12,8 @@ module.exports = (function () {
     let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
 
     let bindings = {
-        'model.firstname': ".firstname",
-        "model.lastname": {type: "innerHTML", selector: ".lastname"}
+        "model.person.firstname": ".firstname",
+        "model.person.lastname": {type: "innerHTML", selector: ".lastname"}
     };
 
     let PersonView = AmpersandView.extend({template, bindings});
