@@ -13,6 +13,7 @@ module.exports = (function () {
     let PersonView = require("../person/view");
     let RepositoryView = require("../repository/view");
 
+    let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
     let subviews = {
         person: {
             constructor: PersonView,
@@ -39,8 +40,6 @@ module.exports = (function () {
             }
         }
     };
-
-    let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
     let RootView = AmpersandView.extend({template, subviews});
 
     return RootView;
