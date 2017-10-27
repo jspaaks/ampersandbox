@@ -19,7 +19,6 @@ module.exports = (function () {
 
     let render = function () {
         this.renderWithTemplate(this);
-        console.log(this.model.people);
         return this;
     };
 
