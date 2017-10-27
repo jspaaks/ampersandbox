@@ -20,4 +20,8 @@ domready(function () {
     // for some reason you still have to explicitly state this
     rootview.render();
 
+    window.setTimeout(() => {
+        rootview.model.persons.at(0).firstname = "Fuzzy";
+    }, 3000);
+
 });
