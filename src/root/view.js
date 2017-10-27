@@ -11,7 +11,7 @@ module.exports = (function () {
 
     let AmpersandView = require("ampersand-view");
     let PersonView = require("../person/view");
-    let RepositoryView = require("../repository/view");
+    let RepositoriesView = require("../repositories/view");
 
     let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
     let subviews = {
@@ -28,14 +28,14 @@ module.exports = (function () {
             }
         },
         repository: {
-            constructor: RepositoryView,
+            constructor: RepositoriesView,
             selector: ".repository",
             waitFor: "model.repositories",
             prepareView: function (el) {
                 return new this.subviews.repository.constructor({
                     el: el,
                     parent: this,
-                    model: this.model.repositories.at(0)
+                    model: this.model
                 });
             }
         }
