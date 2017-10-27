@@ -9,7 +9,7 @@ module.exports = (function () {
 
     let render = function () {
         this.renderWithTemplate();
-        let selector = this.el.querySelector('.repository');
+        let selector = this.el.querySelector(".repository");
         this.renderCollection(this.model.repositories, RepositoryView, selector);
         return this;
     };
