@@ -24,6 +24,10 @@ module.exports = (function () {
         "model.language": {
             type: "text",
             selector: ".language"
+        },
+        "model.expectedPain": {
+            type: "text",
+            selector: ".pain"
         }
     };
 
