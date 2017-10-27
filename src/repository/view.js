@@ -16,6 +16,14 @@ module.exports = (function () {
         "model.id": {
             type: "text",
             selector: ".id"
+        },
+        "model.name": {
+            type: "text",
+            selector: ".name"
+        },
+        "model.language": {
+            type: "text",
+            selector: ".language"
         }
     };
 
