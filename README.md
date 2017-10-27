@@ -19,7 +19,19 @@ Run with ``npm`` or ``yarn``, e.g. ``yarn run build``.
 ## Todo
 
 - model & view a list using a collection 
-- inheritance AbstractRepository -> GitHubRepositoy and BitbucketRepository or something
+- undefined v null in JavaScript
+- inheritance AbstractRepository -> GitHubRepositoy and BitbucketRepository or something. Relevant code snippet:
+
+    ``` javascript
+    # from https://github.com/AmpersandJS/ampersand-view#initialize-new-ampersandviewoptions
+    var SuperheroRowView = PersonRowView.extend({
+      initialize: function () {
+        PersonRowView.prototype.initialize.apply(this, arguments);
+        doSomeOtherStuffHere();
+      })
+    });
+    ```
+
 - figure out event binding
 - routing
 - write some tests, add testing framework (jest maybe? something that integrates
