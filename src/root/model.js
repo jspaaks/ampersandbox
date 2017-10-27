@@ -8,8 +8,8 @@ module.exports = (function () {
     "use strict";
 
     let AmpersandState = require("ampersand-state");
-    let PersonsCollection = require("../persons/collection")
-    let RepositoriesCollection = require("../repositories/collection")
+    let PersonsCollection = require("../persons/collection");
+    let RepositoriesCollection = require("../repositories/collection");
 
     let collections = {
         persons: PersonsCollection,

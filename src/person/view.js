@@ -21,7 +21,7 @@ module.exports = (function () {
         this.renderWithTemplate(this);
         console.log(this.model.people);
         return this;
-    }
+    };
 
     let PersonView = AmpersandView.extend({template, bindings, render});
 

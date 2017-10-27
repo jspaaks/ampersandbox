@@ -18,7 +18,7 @@ module.exports = (function () {
         person: {
             constructor: PersonView,
             selector: ".person",
-            waitFor: "model",
+            waitFor: "model.persons",
             prepareView: function (el) {
                 return new this.subviews.person.constructor({
                     el: el,
@@ -30,7 +30,7 @@ module.exports = (function () {
         repository: {
             constructor: RepositoryView,
             selector: ".repository",
-            waitFor: "model",
+            waitFor: "model.repositories",
             prepareView: function (el) {
                 return new this.subviews.repository.constructor({
                     el: el,

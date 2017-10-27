@@ -1,5 +1,3 @@
-let AmpersandCollection = require("ampersand-collection");
-
 module.exports = (function () {
 
     "use strict";
