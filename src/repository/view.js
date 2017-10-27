@@ -13,7 +13,7 @@ module.exports = (function () {
     let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
 
     let bindings = {
-        "model.repositories[0].id": {
+        "model.id": {
             type: "text",
             selector: ".id"
         }

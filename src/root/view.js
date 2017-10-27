@@ -23,7 +23,7 @@ module.exports = (function () {
                 return new this.subviews.person.constructor({
                     el: el,
                     parent: this,
-                    model: this.model
+                    model: this.model.persons.at(0)
                 });
             }
         },
@@ -35,7 +35,7 @@ module.exports = (function () {
                 return new this.subviews.repository.constructor({
                     el: el,
                     parent: this,
-                    model: this.model
+                    model: this.model.repositories.at(0)
                 });
             }
         }

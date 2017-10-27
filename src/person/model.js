@@ -11,8 +11,7 @@ module.exports = (function () {
 
     let props = {
         firstname: "string",
-        lastname: "string",
-        isdancing: "boolean"
+        lastname: "string"
     };
 
     let derived = {

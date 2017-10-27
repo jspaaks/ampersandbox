@@ -8,21 +8,15 @@ module.exports = (function () {
     "use strict";
 
     let AmpersandState = require("ampersand-state");
+    let PersonsCollection = require("../persons/collection")
+    let RepositoriesCollection = require("../repositories/collection")
 
-    let props = {
-        repositories: {
-            type: "array",
-            required: false,
-            default: undefined
-        },
-        person: {
-            type: "object",
-            required: false,
-            default: undefined
-        }
+    let collections = {
+        persons: PersonsCollection,
+        repositories: RepositoriesCollection
     };
 
-    let RootModel = AmpersandState.extend({props});
+    let RootModel = AmpersandState.extend({collections});
 
     return RootModel;
 

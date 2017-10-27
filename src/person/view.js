@@ -13,11 +13,17 @@ module.exports = (function () {
     let template = require("fs").readFileSync(__dirname + "/template.html", "utf8");
 
     let bindings = {
-        "model.person.firstname": ".firstname",
-        "model.person.lastname": {type: "innerHTML", selector: ".lastname"}
+        "model.firstname": ".firstname",
+        "model.lastname": {type: "innerHTML", selector: ".lastname"}
     };
 
-    let PersonView = AmpersandView.extend({template, bindings});
+    let render = function () {
+        this.renderWithTemplate(this);
+        console.log(this.model.people);
+        return this;
+    }
+
+    let PersonView = AmpersandView.extend({template, bindings, render});
 
     return PersonView;
 
