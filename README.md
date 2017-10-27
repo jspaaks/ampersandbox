@@ -18,7 +18,6 @@ Run with ``npm`` or ``yarn``, e.g. ``yarn run build``.
 
 ## Todo
 
-- model & view a list using a collection 
 - undefined v null in JavaScript
 - inheritance AbstractRepository -> GitHubRepositoy and BitbucketRepository or something. Relevant code snippet:
 
