@@ -10,9 +10,9 @@ module.exports = (function () {
     let AmpersandState = require("ampersand-state");
 
     let props = {
-        id: {type: "number", required: true, default: undefined},
-        name: {type: "string", required: true, default: undefined},
-        language: {type: "string", required: true, default: undefined}
+        id: {type: "number", required: true, default: null},
+        name: {type: "string", required: true, default: null},
+        language: {type: "string", required: true, default: null}
     };
 
     let derived = {
