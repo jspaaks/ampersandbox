@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "description": "ampersandbox the description",
+  "name": "ampersandbox the name",
+  "codeRepository": "https://github.com/jspaaks/ampersandbox",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "version": "0.0.3",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Jurriaan H",
+      "familyName": "Spaaks",
+      "email": "j.spaaks@esciencecenter.nl"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Faruk",
+      "familyName": "Diblen"
+    }
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "givenName": "Jurriaan H.",
+    "familyName": "Spaaks",
+    "email": "j.spaaks@esciencecenter.nl"
+  },
+  "downloadUrl": "https://github.com/jspaaks/ampersandbox/archive/0.0.3.zip",
+  "keywords": [
+    "testing",
+    "the",
+    "keywords again",
+    "I have all the best keywords"
+  ],
+  "softwareVersion":"0.0.3",
+  "datePublished":"2018-03-13",
+  "programmingLanguage": "JavaScript"
+}
+
